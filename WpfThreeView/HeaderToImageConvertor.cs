@@ -34,6 +34,7 @@ namespace WpfThreeView
             else if (new FileInfo(path).Attributes.HasFlag(FileAttributes.Directory))
                 image = "Images/folder-closed.png";
 
+
             return new BitmapImage(new Uri($"pack://application:,,,/{image}"));
         }
 
